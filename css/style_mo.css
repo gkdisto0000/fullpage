@@ -1,0 +1,286 @@
+/* common   */
+.moShow {
+    display: block;
+}
+
+.content {
+    width: 90%;
+    margin: 0 auto;
+    max-width: none;
+}
+
+
+p, dd, li {
+    font-size: 1.4rem;
+    font-family: 'NotoSans_Regular';
+}
+
+.topBtn {
+    width: 3rem;
+    height: 3rem;
+    right: 1.5rem;
+    bottom: 4rem;
+    background-size : 1.3rem;
+}
+
+
+/* article */
+.art-txt h2 {
+    font-size: 2.1rem;
+    text-align: center;
+    word-break: keep-all;
+    width: 80%;
+    margin: 0 auto;
+    letter-spacing: -0.5px;
+}
+
+.art-txt p {
+    font-size: 1.2rem;
+    text-align: center;
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 2rem;
+    word-break: keep-all;
+    color: #666666;
+}
+
+.art-txt p br{
+    display: none;
+}
+
+article.flex-in {
+    flex-wrap: wrap;
+}
+
+
+article .txtcolor {
+    font-size: 1.2rem;
+    margin: 0.5rem 0 1rem;
+    text-align: center;
+}
+
+article.flex-in > img {
+    display: block;
+    width: 65%;
+    margin: 0 auto;
+}
+
+a.down {
+    display: none;
+}
+
+
+
+/* sec01 */
+.gnbWrap {
+    width: 100%;
+    left: 5%;
+}
+
+.gnb h1 {
+    width: 5rem;
+    height: 4rem;
+    background-size: contain;
+    margin-top: 1rem;
+}
+
+.gnb nav ul {
+    display: none;
+}
+
+.section .main .mnTxt strong{
+    font-size: 4.9rem;
+    letter-spacing: 3.88px;
+    line-height: 1;
+}
+
+.section .main .mnTxt .midTxt {
+    font-size: 1rem;
+    min-width: 0;
+    margin-top: 0.25rem;
+    line-height: 1.4;
+}
+
+.section .main .mnTxt .midTxt:before {
+    bottom: 1rem;
+    height: 0.3rem;
+    width: 103%;
+}
+
+.sec01 .info {
+    font-size: 1rem;
+}
+
+
+/* sec02 */
+.sec02 img {
+    width: 30%;
+}
+
+
+/* sec03, 05 */
+.sec03 .flex-in, .sec05 .flex-in {
+    flex-direction : column-reverse;
+}
+
+.sec03 article.flex-in > img {
+    margin-bottom: 6rem;
+}
+
+
+/* sec06 */
+.sec06 article.flex-in > img {
+    margin-bottom: 3.5rem;
+    padding-left: 2rem;
+}
+
+
+/* sec07 */
+.sec07 article {
+    display: block;
+}
+
+.sec07 article .art-txt {
+    width: 100%;
+}
+
+.sec07 .art-slideWrap {
+    width: 100vw;
+    min-width: 0;
+    margin-top: 4.5rem;
+    margin-left: -5%;
+}
+
+.sec07 .slidecont {
+    padding: 2.5rem;
+    opacity: 0.5;
+}
+
+.sec07 .slidecont.swiper-slide-active {
+    opacity: 1;
+}
+
+.sec07 .slidecont dt {
+    font-size: 1.25rem;
+}
+
+.sec07 .slidecont dt.subTit {
+    font-size: 1rem;
+    margin-top: 1rem;
+}
+
+.sec07 .slidecont dd {
+    font-size: 1rem;
+    margin-top: 1rem;
+    padding-top: 1rem;
+}
+
+.sec07 .slidecont img {
+    width: 5rem;
+    height: 5rem;
+    top:2rem;
+    right: 2rem;
+}
+
+.sec07 .swiper-pagination {
+    top:initial;
+    bottom: -1rem;
+    left: 50%;
+    transform: translate(-50%, 0%) !important;
+}
+
+.sec07 .swiper-pagination-bullet {
+    width: 0.6rem;
+    height: 0.6rem;
+    margin: 0 0.25rem;
+}
+
+
+/* sec08 */
+.sec08 .tabTop {
+    display: block;
+    margin-bottom: 1rem;
+}
+
+.sec08 .tabTop ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    margin: 0 auto;
+    margin-top: 3rem;
+}
+
+.sec08 .tabTop ul li {
+    line-height: 3.5rem;
+    height: 3.5rem;
+    font-size: 1.2rem;
+    margin: 0 1rem 1rem 0;
+    border-radius: 10px;
+}
+
+.sec08 .listWrap.on {
+    height: 44.5rem;
+}
+
+.sec08 .listWrap .listCnt {
+    padding: 2.1rem 0.5rem;
+}
+
+.sec08 .listWrap .listCnt:after {
+    display: none;
+}
+
+.sec08 .listWrap .listCnt .category {
+    font-size: 1.1rem;
+}
+
+.sec08 .listWrap .listCnt .listTit {
+    font-size: 1.3rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+
+.sec08 .listMore {
+    font-size: 1rem;
+    line-height: 3rem;
+    height: 3rem;
+    padding: 0 2.3rem;
+    border-radius: 0.5rem;
+    margin: 0 auto;
+}
+
+
+
+/* footer */
+footer {
+    padding: 3rem 3.3rem;
+}
+
+footer .content {
+    display: block;
+    text-align: center;
+}
+
+footer .content p {
+    font-size: 1rem;
+}
+
+footer .ftrLft .ftrLogo {
+    width: 4.4rem;
+    height: 2.8rem;
+    margin: 0 auto;
+}
+
+footer .ftrRht ul.about li a {
+    font-size: 1rem;
+}
+
+footer .ftrLft .ftrinfo br {
+    display: none;
+}
+footer .ftrLft .ftrinfo br.moShow {
+    display: block;
+}
