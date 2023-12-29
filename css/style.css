@@ -31,6 +31,14 @@ p, dd, li {
     font-family: 'NotoSans_Regular';
 }
 
+@media all and (max-width: 1350px){
+    .content {
+        width: 90%;
+     }
+}
+
+
+
 /* article */
 .art-txt h2 {
     font-size: 4.8rem;
@@ -44,6 +52,11 @@ p, dd, li {
     margin-top: 5rem;
     opacity: 0.8;
     font-family: 'NotoSans_Regular';
+    color: #666;
+}
+
+.art-txt p b {
+    color: #222;
 }
 
 article.flex-in {
@@ -149,12 +162,12 @@ a.down:hover {
 }
 
 .section .main {
-    width: 120%;
+    margin: 0 auto;
 }
 
 .section .main .mnTxt {
     display: flex;
-    flex-wrap: wrap;
+    white-space: nowrap;
 }
 
 .section .main .mnTxt strong{
@@ -175,6 +188,7 @@ a.down:hover {
     margin-top: 3.8rem;
     position: relative;
     font-family: 'Mermaid';
+    line-height: 1.4;
 }
 
 .section .main .mnTxt .midTxt:before {
@@ -271,7 +285,7 @@ a.down:hover {
 }
 
 .sec02 .art-txt h2 {
-    margin-top: 5rem;
+    margin-top: 7rem;
     line-height: inherit;
 }
 
@@ -279,6 +293,15 @@ a.down:hover {
     color: #999;
 }
 
+
+/* sec06 */
+.sec06 article.flex-in img {
+   width: 45%;
+}
+
+.sec06 .art-txt p+p {
+    margin-top: 1.5rem;
+}
 
 /* sec07 */
 .sec07 article {
@@ -358,14 +381,19 @@ a.down:hover {
     display: flex;
     justify-content: space-between;
     margin-bottom: 4rem;
+    flex-wrap: wrap;
 }
 
-.sec08 .tabTop ul {
+.sec08 .tabTop .art-txt {
+    margin-bottom: 2rem;
+}
+
+.sec08 .tabTop .yearTab {
     display: flex;
     margin-top: 1.5rem;
 }
 
-.sec08 .tabTop ul li {
+.sec08 .tabTop .yearTab li {
     margin: 0 0.5rem;
     line-height: 4.4rem;
     height: 4.4rem;
@@ -374,9 +402,10 @@ a.down:hover {
     font-weight: bold;
     cursor: pointer;
     transition: all 0.5s;
+    width: fit-content;
 }
 
-.sec08 .tabTop ul li.on {
+.sec08 .tabTop .yearTab li.on {
     background-color: #F2F4F6;
 }
 
@@ -539,7 +568,6 @@ footer .ftrRht ul.mid-social li{
     text-indent: -9999px;
     width: 4.7rem;
     height: 4.7rem;
-    padding: 2rem;
     border: 1px solid #999;
     border-radius: 100%;
 }
@@ -586,7 +614,7 @@ footer .ftrRht ul.about li+li:before {
     position: absolute;
     top: 0.6rem;
     left: -1.4rem;
-    opacity: 0.5;
+    opacity: 0.3;
 }
 
 .topBtn {

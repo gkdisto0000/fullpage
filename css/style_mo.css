@@ -1,4 +1,13 @@
 /* common   */
+
+
+@media (min-width: 650px) and (max-width: 1050px){
+    html {
+        font-size: 92.5%;
+    }
+}
+
+
 .moShow {
     display: block;
 }
@@ -88,7 +97,17 @@ a.down {
     display: none;
 }
 
-.section .main .mnTxt strong{
+.section .main {
+    width: min-content;
+    margin: 0 auto;
+}
+
+.section .main .mnTxt{
+    white-space: wrap;
+    flex-wrap: wrap;
+}
+
+    .section .main .mnTxt strong{
     font-size: 4.9rem;
     letter-spacing: 3.88px;
     line-height: 1;
@@ -114,26 +133,39 @@ a.down {
 
 /* sec02 */
 .sec02 img {
-    width: 30%;
+    width: 9rem;
 }
 
+.sec02 .art-txt h2 {
+    margin-top: 4rem;
+}
 
-/* sec03, 05 */
+/* sec03, 04, 05 */
 .sec03 .flex-in, .sec05 .flex-in {
     flex-direction : column-reverse;
 }
 
 .sec03 article.flex-in > img {
     margin-bottom: 6rem;
+    width: 20.2rem;
 }
+
+.sec04 article.flex-in > img, .sec05 article.flex-in > img {
+    width: 20rem;
+}
+
 
 
 /* sec06 */
 .sec06 article.flex-in > img {
     margin-bottom: 3.5rem;
     padding-left: 2rem;
+    width: 26rem;
 }
 
+.sec06 .art-txt p+p {
+    margin-top: 0.7rem;
+}
 
 /* sec07 */
 .sec07 article {
@@ -153,7 +185,8 @@ a.down {
 
 .sec07 .slidecont {
     padding: 2.5rem;
-    opacity: 0.5;
+    opacity: 0.4;
+    box-shadow: 10px 10px 20px #0000000D;
 }
 
 .sec07 .slidecont.swiper-slide-active {
@@ -202,20 +235,25 @@ a.down {
     margin-bottom: 1rem;
 }
 
-.sec08 .tabTop ul {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: left;
-    margin: 0 auto;
-    margin-top: 3rem;
+.sec08 .tabTop .scroll {
+    width: 100%;
 }
 
-.sec08 .tabTop ul li {
+.sec08 .tabTop .yearTab {
+    margin-top: 3rem;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.sec08 .tabTop .yearTab li {
     line-height: 3.5rem;
     height: 3.5rem;
     font-size: 1.2rem;
     margin: 0 1rem 1rem 0;
     border-radius: 10px;
+    width: fit-content;
 }
 
 .sec08 .listWrap.on {
@@ -256,7 +294,7 @@ a.down {
 
 /* footer */
 footer {
-    padding: 3rem 3.3rem;
+    padding: 3rem 3.3rem 8rem;
 }
 
 footer .content {
@@ -266,6 +304,16 @@ footer .content {
 
 footer .content p {
     font-size: 1rem;
+    word-break: keep-all;
+    font-weight: lighter;
+}
+
+footer .ftrRht .top-store li, footer .ftrRht .mid-social li {
+    background-size: contain;
+}
+
+footer .ftrLft {
+    position: relative;
 }
 
 footer .ftrLft .ftrLogo {
@@ -274,13 +322,39 @@ footer .ftrLft .ftrLogo {
     margin: 0 auto;
 }
 
+footer .ftrLft .ftrinfo br {
+    display: none;
+}
+
+footer .ftrLft .ftrinfo br.moShow {
+    display: block;
+}
+
+footer .ftrLft .copyright {
+    position: absolute;
+    bottom: -25rem;
+}
+
+footer .ftrLft .copyright:before {
+    display: block;
+    content: '';
+    width: 100%;
+    height: 1px;
+    background-color: #999;
+    position: absolute;
+    top: -1rem;
+    left: 0;
+}
+
+
+
 footer .ftrRht ul.about li a {
     font-size: 1rem;
 }
 
-footer .ftrLft .ftrinfo br {
-    display: none;
-}
-footer .ftrLft .ftrinfo br.moShow {
-    display: block;
+
+footer .ftrRht ul.mid-social li {
+    width: 3.1rem;
+    height: 3.1rem;
+    background-size: 1.3rem !important;
 }

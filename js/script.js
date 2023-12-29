@@ -44,7 +44,7 @@ $(function() {
 	});
 
 
-	new Swiper('.art-slideWrap', {
+	var swiperArticle = new Swiper('.art-slideWrap', {
 		spaceBetween : 40,
 		slidesPerView : 2.5,
 		loop : true,
@@ -69,6 +69,9 @@ $(function() {
 	});
 
 
+
+
+
     $('.yearTab li').on('click',function(){
 		var tabNum = $(this).data('yearTab');
 		$('.yearTab li').removeClass('on');
@@ -84,7 +87,6 @@ $(function() {
 		$('#' + tabNum).addClass('on');
 	});
 	$('.yearTab li:nth-child(1)').trigger('click');
-
 
 
 
