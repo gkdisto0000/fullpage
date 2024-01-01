@@ -71,6 +71,16 @@ $(function() {
 
 
 
+    var swiperTab = new Swiper('.scroll', {
+		slidesPerView : 5,
+        breakpoints: {
+			360: {
+                slidesPerView : 3,
+			}
+		},
+	});
+
+
 
     $('.yearTab li').on('click',function(){
 		var tabNum = $(this).data('yearTab');
@@ -102,5 +112,9 @@ $(function() {
     //     $(this).hide();
     //     $('.listMore.openBtn').show();
     // });
+
+    $('.mapBtn').click(function(){
+        $(this).toggleClass('active');
+    });
 
 })

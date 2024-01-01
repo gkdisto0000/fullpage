@@ -119,14 +119,15 @@ a.down:hover {
     display: flex;
     justify-content: space-between;
     line-height: 55px;
+    margin-top: 2rem;    
 }
 
 .gnb h1 {
     background: url('../image/logo.png') no-repeat;
+    background-size: contain;
     text-indent: -99999px;
     width: 11.1rem;
     height: 8rem;
-    margin-top: 2rem;
 }
 
 .gnb h1 a {
@@ -137,7 +138,6 @@ a.down:hover {
 
 .gnb nav ul {
     display: flex;
-    margin-top: 2rem;
 }
 
 .gnb nav ul li {
@@ -298,6 +298,10 @@ a.down:hover {
 .sec06 article.flex-in img {
    width: 45%;
 }
+
+.sec06 article.flex-in .art-txt {
+    width: 45%;
+} 
 
 .sec06 .art-txt p+p {
     margin-top: 1.5rem;
