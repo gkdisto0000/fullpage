@@ -12,13 +12,6 @@ br.mo {
 }
 
 
-@media (min-width: 650px) and (max-width: 1050px){
-    html {
-        font-size: 92.5%;
-    }
-}
-
-
 
 .content {
     width: 90%;

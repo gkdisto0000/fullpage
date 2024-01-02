@@ -32,7 +32,7 @@ time, mark, audio, video {
 }
 
 body {
-	margin: 0; font-family: 'NotoSans', 'nsKR', 'MalgunGothic', '맑은고딕', 'Dotum', 'Gulim', 'Arial', sans-serif; font-weight:400; font-size: 14px; color:#222;  height:100%; overflow:hidden; overflow-y:scroll; -webkit-overflow-scrolling:touch; line-height: 1.8; position: relative;
+	margin: 0; font-family: 'NotoSans', 'nsKR', 'MalgunGothic', '맑은고딕', 'Dotum', 'Gulim', 'Arial', sans-serif; font-weight:400; font-size: 14px; color:#222;  height:100%; overflow:hidden; overflow-y:scroll; -webkit-overflow-scrolling:touch; line-height: 1.8; position: relative; word-break: keep-all;
 }
 
 /* HTML5 display-role reset for older browsers */
@@ -72,16 +72,6 @@ form{
 }
 
 
-/* common */
-html {
-    font-size: 62.5%;
-}
-
-.content {
-    width: 80%;
-    margin: 0 auto;
-    max-width: 1080px;
-}
 
 .txtcolor {
     color: #8958FF;

@@ -1,3 +1,25 @@
+/* common */
+html {
+    font-size: 62.5%;
+}
+
+.content {
+    width: 80%;
+    margin: 0 auto;
+    max-width: 1080px;
+}
+
+@media (min-width: 650px) and (max-width: 980px){
+    html {
+        font-size: 92.5%;
+    }
+    .content {
+        width: 90%;
+        margin: 0 auto;
+        max-width: none;
+    }
+}
+
 /* 반응형 */
 .moShow {
     display: none;
@@ -282,7 +304,6 @@ a.down:hover {
     margin-top: 7rem;
     line-height: inherit;
     line-height: 1.6;
-    word-break: keep-all;
 }
 
 .sec02 .art-txt p {
@@ -352,7 +373,6 @@ a.down:hover {
 
 .sec07 .slidecont dd {
     color: #666666;
-    word-break: keep-all;
     padding-top: 2rem;
     margin-top: 1.8rem;
     border-top: 1px solid #ebebeb;

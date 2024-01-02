@@ -58,6 +58,12 @@ $(function() {
         },
 
 		 breakpoints: {
+            1350: {
+                spaceBetween : 20,
+                slidesPerView : 1.8,
+                centeredSlides :false,
+                },
+
 			760: {
 			spaceBetween : 20,
 			slidesPerView : 1.4,
