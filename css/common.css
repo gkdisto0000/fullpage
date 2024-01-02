@@ -72,7 +72,6 @@ form{
 }
 
 
-
 .txtcolor {
     color: #8958FF;
 }
@@ -84,7 +83,6 @@ form{
 p, dd, li {
     font-size: 1.8rem;
 }
-
 
 
 /* font */
@@ -135,7 +133,6 @@ p, dd, li {
 			url("./fonts/KTL.woff") format('woff'),
 			url("./fonts/KTL.eot?#iefix") format('embedded-opentype');
 }
-
 
 @font-face {
   font-family: 'Mermaid';

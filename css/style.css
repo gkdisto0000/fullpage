@@ -599,26 +599,23 @@ footer .ftrRht ul.mid-social li{
     height: 4.7rem;
     border: 1px solid #999;
     border-radius: 100%;
+    background-size: 2rem;
 }
 
 footer .ftrRht ul.mid-social .twitter {
     background-image: url('../image/mid-twitter.png');
-    background-size: 1.7rem;
 }
 
 footer .ftrRht ul.mid-social .facebook {
     background-image: url('../image/mid-facebook.png');
-    background-size: 3rem;
 }
 
 footer .ftrRht ul.mid-social .insta {
     background-image: url('../image/mid-insta.png');
-    background-size: 1.7rem;
 }
 
 footer .ftrRht ul.mid-social .youtube {
     background-image: url('../image/mid-youtube.png');
-    background-size: 1.7rem;
 }
 
 footer .ftrRht ul.about {

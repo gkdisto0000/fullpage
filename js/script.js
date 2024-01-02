@@ -37,7 +37,6 @@ $(function() {
         anchors: ['sec01','sec02','sec03', 'sec04', 'sec05','sec06','sec07','sec08', 'sec09', 'sec10'],
     });
 
-
     // aos 초기화
 	AOS.init({
 		once: true,
