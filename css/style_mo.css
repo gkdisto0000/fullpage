@@ -1,4 +1,15 @@
-/* common   */
+/* 반응형 */
+.moShow {
+    display: block;
+}
+
+.pcShow {
+    display: none;
+}
+
+br.mo {
+    display: block !important;
+}
 
 
 @media (min-width: 650px) and (max-width: 1050px){
@@ -8,9 +19,6 @@
 }
 
 
-.moShow {
-    display: block;
-}
 
 .content {
     width: 90%;
@@ -21,7 +29,6 @@
 
 p, dd, li {
     font-size: 1.4rem;
-    font-family: 'NotoSans_Regular';
 }
 
 .topBtn {
@@ -61,7 +68,6 @@ article.flex-in {
     flex-wrap: wrap;
 }
 
-
 article .txtcolor {
     font-size: 1.2rem;
     margin: 0.5rem 0 1rem;
@@ -86,9 +92,13 @@ a.down {
     left: 5%;
 }
 
+.gnb {
+    margin-top: 1rem;
+}
+
 .gnb h1 {
-    width: 5rem;
-    height: 4rem;
+    width: 80px;
+    height: 40px;
     background-size: contain;
     margin-top: 1rem;
 }
@@ -97,16 +107,27 @@ a.down {
     display: none;
 }
 
+
+/* 햄버거바 svg */
 .mapBtn  { margin: 0 auto; position: relative; display: block; cursor: pointer;  padding:0;outline:none; position:relative; border:none; background:none; cursor:pointer; -webkit-appearence:none; -webkit-tap-highlight-color:transparent; z-index:999; position: relative; display: block; transition: all 0.3s; --color:#fff; width: 100px; margin: 0 0 0 auto;}
-.mapBtn svg { stroke:var(--color); stroke-width:2px; fill:none; display:block; position:absolute; width:44px; height:36px; position: absolute; right: 0px;}
-.mapBtn svg path {stroke-dasharray:var(--array-1, 26px) var(--array-2, 100px); stroke-dashoffset:var(--offset, 126px); transform:translateZ(0); transition:stroke-dasharray var(--duration, 0.85s) var(--easing, ease) var(--delay, 0s), stroke-dashoffset var(--duration, 0.7s) var(--easing, ease) var(--delay, 0s) , stroke var(--duration, 0.7s) var(--easing, ease) var(--delay, 0s); }
+
+.mapBtn svg { stroke:var(--color); stroke-width:1.5px; fill:none; display:block; position:absolute; width:44px; height:36px; position: absolute; right: 0px;}
+
+.mapBtn svg path {stroke-dasharray:var(--array-1, 25.5px) var(--array-2, 100px); stroke-dashoffset:var(--offset, 126px); transform:translateZ(0); transition:stroke-dasharray var(--duration, 0.85s) var(--easing, ease) var(--delay, 0s), stroke-dashoffset var(--duration, 0.7s) var(--easing, ease) var(--delay, 0s) , stroke var(--duration, 0.7s) var(--easing, ease) var(--delay, 0s); }
+
 .mapBtn svg path:nth-child(2) { --easing:ease-in; --duration:.7s; --offset:100px; --array-2:74px;}
-.mapBtn svg path:nth-child(3) { --array-2:107px; --offset:133px;}
+
+.mapBtn svg path:nth-child(3) { --array-2:107px; --offset:132px;}
+
 .mapBtn.active svg path {--offset:57px;}
+
 .mapBtn.active svg path:nth-child(1), .mapBtn.active svg path:nth-child(3) {--delay:.1s; --easing:cubic-bezier(.2, .4, .2, 1.1);}
+
 .mapBtn.active svg path:nth-child(2) {--duration:.2s; --offset:2px; --array-1:1px;}
-.mapBtn.active svg path:nth-child(3) {--offset:58px;}
-    
+
+.mapBtn.active svg path:nth-child(3) {--offset:57px;}
+
+
 
 
 .section .main {
@@ -128,8 +149,8 @@ a.down {
 .section .main .mnTxt .midTxt {
     font-size: 1rem;
     min-width: 0;
-    margin-top: 0.25rem;
-    line-height: 1.4;
+    margin-top: 0.4rem;
+    line-height: 1.25;
 }
 
 .section .main .mnTxt .midTxt:before {
@@ -138,8 +159,33 @@ a.down {
     width: 103%;
 }
 
+.sec01 {
+    background-image: url('../image/bg_mo.png');
+}
+
 .sec01 .info {
+    bottom: 5rem;
+}
+
+.sec01 .info > div {
     font-size: 1rem;
+}
+
+@keyframes vertical {
+    0% {
+      bottom: -4rem;
+    }
+    50% {
+        bottom: -4.5rem;
+    }
+    100% {
+        bottom: -4rem;
+    }
+  }
+
+.flip-in-hor-bottom {
+-webkit-animation: flip-in-hor-bottom 1.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+        animation: flip-in-hor-bottom 1.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 }
 
 
@@ -149,7 +195,7 @@ a.down {
 }
 
 .sec02 .art-txt h2 {
-    margin-top: 4rem;
+    margin-top: 3.5rem;
 }
 
 /* sec03, 04, 05 */
@@ -233,7 +279,7 @@ a.down {
 
 .sec07 .swiper-pagination {
     top:initial;
-    bottom: -1rem;
+    bottom: -1.5rem;
     left: 50%;
     transform: translate(-50%, 0%) !important;
 }
@@ -256,7 +302,7 @@ a.down {
 }
 
 .sec08 .tabTop .yearTab {
-    margin-top: 3rem;
+    margin-top: 3.5rem;
     justify-content: space-between;
 }
 
@@ -266,11 +312,10 @@ a.down {
     font-size: 1.2rem;
     border-radius: 10px;
     text-align: center;
-    width: auto !important;
 }
 
 .sec08 .listWrap.on {
-    height: 38.6rem;
+    height: 40rem;
 }
 
 .sec08 .listWrap .listCnt {
@@ -296,19 +341,19 @@ a.down {
 
 .sec08 .listMore {
     font-size: 1rem;
-    line-height: 3rem;
+    line-height: 2.8rem;
     height: 3rem;
     padding: 0 2.3rem;
     border-radius: 0.5rem;
     margin: 0 auto;
-    margin-top: 2rem;
+    margin-top: 3rem;
 }
 
 
 
 /* footer */
 footer {
-    padding: 3rem 3.3rem 9rem;
+    padding: 3.5rem 0 9rem;
 }
 
 footer .content {
@@ -340,13 +385,12 @@ footer .ftrLft .ftrinfo br {
     display: none;
 }
 
-footer .ftrLft .ftrinfo br.moShow {
-    display: block;
-}
-
 footer .ftrLft .copyright {
     position: absolute;
     bottom: -23rem;
+    left: 50%;
+    transform: translate(-50%, 0);
+    width: 100%;
 }
 
 footer .ftrLft .copyright:before {
@@ -361,27 +405,43 @@ footer .ftrLft .copyright:before {
     opacity: 0.2;
 }
 
+footer .ftrLft .ftrinfo {
+    margin-top: 1rem;
+}
+
 footer .ftrRht ul {
     margin-top: 3rem;
 }
 
 footer .ftrRht ul.about {
-    margin-top: 2rem;
+    margin: 2.5rem auto 0;
+    width: 80%;
 }
 
 footer .ftrRht ul.about li a {
     font-size: 1rem;
+    word-break: keep-all;
 }
 
 footer .ftrRht ul.mid-social {
-    width: 80%;
-    margin: 2rem auto 0;
+    width: 17rem;
+    margin: 2.8rem auto 0;
 }
 
 footer .ftrRht ul.mid-social li {
     width: 3.1rem;
     height: 3.1rem;
     background-size: 1.3rem !important;
+    border: 1px solid rgba(255, 255, 255, .2);
+}
+
+footer .ftrRht ul.top-store {
+    width: 80%;
+    margin: 3rem auto 0;
+}
+
+footer .ftrRht .top-store li {
+    width: 50%;
 }
 
 footer .ftrRht ul.about li+li:before {
@@ -389,3 +449,4 @@ footer .ftrRht ul.about li+li:before {
     left: -2rem;
     opacity: 0.2;
 }
+

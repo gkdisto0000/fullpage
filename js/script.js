@@ -43,10 +43,10 @@ $(function() {
 		once: true,
 	});
 
-
+    // 슬라이드
 	var swiperArticle = new Swiper('.art-slideWrap', {
 		spaceBetween : 40,
-		slidesPerView : 2.5,
+		slidesPerView : 2.95,
 		loop : true,
 		loopedSlides: 10,
 		loopAdditionalSlides: 10,
@@ -56,9 +56,7 @@ $(function() {
             type: 'bullets',
             clickable: true, 
         },
-        
-		//autoplay : true,
-		//delay : 4000,
+
 		 breakpoints: {
 			760: {
 			spaceBetween : 20,
@@ -68,20 +66,18 @@ $(function() {
 		},
 	});
 
-
-
-
+    // sec08 tab 반응형
     var swiperTab = new Swiper('.scroll', {
 		slidesPerView : 5,
+        autoplay : false,
         breakpoints: {
-			360: {
-                slidesPerView : 3,
+			445: {
+                slidesPerView : 3.5,
 			}
 		},
 	});
 
-
-
+    // sec08 tab 작동
     $('.yearTab li').on('click',function(){
 		var tabNum = $(this).data('yearTab');
 		$('.yearTab li').removeClass('on');
@@ -97,21 +93,6 @@ $(function() {
 		$('#' + tabNum).addClass('on');
 	});
 	$('.yearTab li:nth-child(1)').trigger('click');
-
-
-
-    // list버튼
-    // $('.cnt08 .openBtn').click(function(){
-    //     $('.cnt08 .listWrap').addClass('open');
-    //     $(this).hide();
-    //     $('.listMore.closeBtn').show();
-    // });
-
-    // $('.listMore.closeBtn').click(function(){
-    //     $('.cnt08 .listWrap').removeClass('open');
-    //     $(this).hide();
-    //     $('.listMore.openBtn').show();
-    // });
 
     $('.mapBtn').click(function(){
         $(this).toggleClass('active');
