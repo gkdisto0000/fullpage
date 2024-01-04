@@ -97,7 +97,6 @@ a.down {
     display: none;
 }
 
-
 /* 햄버거바 svg */
 .mapBtn  { margin: 0 auto; position: relative; display: block; cursor: pointer;  padding:0;outline:none; position:relative; border:none; background:none; cursor:pointer; -webkit-appearence:none; -webkit-tap-highlight-color:transparent; z-index:999; position: relative; display: block; transition: all 0.3s; --color:#fff; width: 100px; margin: 0 0 0 auto;}
 
@@ -117,6 +116,24 @@ a.down {
 
 .mapBtn.active svg path:nth-child(3) {--offset:57px;}
 
+
+
+/* gnb 블랙 */
+.gnbWrap.black .gnb nav ul li {
+    color: #000;
+}
+
+.gnbWrap.black .gnb h1 {
+    background: url('../image/logo_black.png') no-repeat;
+    width: 80px;
+    height: 40px;
+    background-size: contain;
+    margin-top: 1rem;
+}
+
+.gnbWrap.black .mapBtn svg {
+    stroke : #000;
+}
 
 
 
@@ -202,6 +219,11 @@ a.down {
     width: 20rem;
 }
 
+
+.sec04 .mockUp-slide, .sec05 .mockUp-slide {
+    width: 250px;
+    margin: 0 auto;
+}
 
 
 /* sec06 */

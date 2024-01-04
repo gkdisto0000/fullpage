@@ -2,23 +2,38 @@ $(function() {
     // 풀페이지
     var page = $('.fullpage').fullpage({
         scrollingSpeed: 500,
+        normalScrollElements: '.scroll-active',
+        scrollOverflow: true,
+
         //aos        
         afterLoad: function(anchorLink, index){
             jQuery('.section.active [data-aos]').addClass("aos-animate");
             if (index == 3){
 				$('.topBtn').addClass('black');
+                $('.gnbWrap').addClass('black');
 			} else if (index == 4){
 				$('.topBtn').addClass('black');
+                $('.gnbWrap').addClass('black');
             } else if (index == 5){
 				$('.topBtn').addClass('black');
+                $('.gnbWrap').addClass('black');
             } else if (index == 6){
 				$('.topBtn').addClass('black');
+                $('.gnbWrap').addClass('black');
             } else if (index == 7){
 				$('.topBtn').addClass('black');
+                $('.gnbWrap').addClass('black');
             } else if (index == 8){
 				$('.topBtn').addClass('black');
+                $('.gnbWrap').addClass('black');
+                autoScrolling : false
+
             } else if (index == 1){
 				$('.topBtn').addClass('hide');
+                $('.gnbWrap').removeClass('black');
+            } else if (index == 2){
+				$('.topBtn').removeClass('hide');
+                $('.gnbWrap').removeClass('black');
             } else {
                 $('.topBtn').removeClass('black');
                 $('.topBtn').removeClass('hide');
@@ -33,16 +48,32 @@ $(function() {
         afterSlideLoad: function(){
             jQuery('.slide.active [data-aos]').addClass("aos-animate");
         },     
-        
         anchors: ['sec01','sec02','sec03', 'sec04', 'sec05','sec06','sec07','sec08', 'sec09', 'sec10'],
     });
 
+
     // aos 초기화
 	AOS.init({
-		once: true,
+		duration: 300,
+		easing: 'ease',
 	});
 
-    // 슬라이드
+
+    // sec04, 05 목업 슬라이드
+    var mockUpSlide = new Swiper('.mockUp-slide', {
+        slidesPerView : 1,
+        autoplay : false,
+        loop : true,
+    });
+
+    var mockUpSlide = new Swiper('.mockUp-slide2', {
+        slidesPerView : 1,
+        autoplay : false,
+        loop : true,
+    });
+
+
+    // 작가 슬라이드
 	var swiperArticle = new Swiper('.art-slideWrap', {
 		spaceBetween : 40,
 		slidesPerView : 2.95,
@@ -71,6 +102,7 @@ $(function() {
 		},
 	});
 
+
     // sec08 tab 반응형
     var swiperTab = new Swiper('.scroll', {
 		slidesPerView : 5,
@@ -82,6 +114,7 @@ $(function() {
 		},
 	});
 
+    
     // sec08 tab 작동
     $('.yearTab li').on('click',function(){
 		var tabNum = $(this).data('yearTab');

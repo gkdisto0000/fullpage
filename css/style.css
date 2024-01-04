@@ -46,10 +46,12 @@ br.mo {
     margin-top: 5rem;
     opacity: 0.8;
     color: #666;
+    letter-spacing: -0.2px;
 }
 
 .art-txt p span {
     color: #222;
+    font-weight: 600;
 }
 
 article.flex-in {
@@ -85,6 +87,7 @@ a.down {
     transform: translate(-50%, 0%);
     cursor: pointer;
     transition: all 0.5s;
+    z-index: 2;
 }
 
 a.down.wh {
@@ -103,10 +106,11 @@ a.down:hover {
 /* sec01 */
 .gnbWrap {
     margin: 0 auto;
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 4%;
     width: 92%;
+    z-index: 999;
 }
 .gnb {
     display: flex;
@@ -121,6 +125,8 @@ a.down:hover {
     text-indent: -99999px;
     width: 11.1rem;
     height: 8rem;
+    transition: background 0.5s;
+
 }
 
 .gnb h1 a {
@@ -138,7 +144,31 @@ a.down:hover {
     font-weight: 600;
     cursor: pointer;
     font-size: 1.6rem;
+    color: #fff;
+    transition: color 0.5s;
 }
+
+.gnb nav ul li:hover {
+    color: #8958FF;
+}
+
+/* gnb 블랙 */
+.gnbWrap.black .gnb nav ul li {
+    color: #000;
+}
+
+.gnbWrap.black .gnb h1 {
+    background: url('../image/logo_black.png') no-repeat;
+    background-size: contain;
+    text-indent: -99999px;
+    width: 11.1rem;
+    height: 8rem;
+}
+
+.gnbWrap .gnb nav ul li:hover {
+    color: #8958FF;
+}
+
 
 .sec01 {
     background-size: contain;
@@ -233,7 +263,7 @@ a.down:hover {
 
 .sec01 .info > div {
     font-weight: 100;
-    transition: all 1s;
+    transition: all 0.5s;
     font-size: 1.4rem;
 }
 
@@ -248,7 +278,7 @@ a.down:hover {
 }
 
 .sec01 .info:hover > div {
-    font-size: 1.6rem;
+    font-size: 1.5rem;
     font-weight: 600;
 }
 
@@ -315,6 +345,21 @@ a.down:hover {
     background-color: #fff;
 }
 
+.sec04 .mockUp-slide, .sec05 .mockUp-slide {
+    width: 450px;
+    overflow: hidden;
+}
+
+.sec04 .mockUp-slide img, .sec05 .mockUp-slide img {
+    width: 100%;
+    display: block;
+}
+
+/* .sec04, .sec05 .swiper-wrapper {
+    overflow: hidden;
+} */
+
+
 /* sec06 */
 .sec06 article.flex-in img {
    width: 45%;
@@ -369,13 +414,17 @@ a.down:hover {
     font-family: 'NotoSans_Light';
     letter-spacing: -0.36px;
     margin-top: 2rem;
+    width: 100%;
+    border-bottom: 1px solid #ebebeb;
+    padding-bottom: 2rem;
 }
 
 .sec07 .slidecont dd {
     color: #666666;
-    padding-top: 2rem;
     margin-top: 1.8rem;
-    border-top: 1px solid #ebebeb;
+    letter-spacing: -0.36px;
+    font-weight: 600;
+    width: 88%;
 }
 
 .sec07 .slidecont img {
@@ -402,6 +451,14 @@ a.down:hover {
 
 
 /* sec08 */
+
+.scroll-active {
+    overflow-y: scroll;
+    overflow-x: hidden;
+    height: 500px;
+}
+
+
 .sec08 .tabTop {
     display: flex;
     justify-content: space-between;
@@ -442,9 +499,21 @@ a.down:hover {
     overflow: hidden;
 }
 
-.sec08 .listWrap.on {
-    height: 63rem;
+.listWrap::-webkit-scrollbar {
+    display: none;
 }
+
+.listWrap {
+    -ms-overflow-style: none; /* 인터넷 익스플로러 */
+    scrollbar-width: none; /* 파이어폭스 */
+  }
+
+.sec08 .listWrap.on {
+    height: 65rem;
+    overflow: scroll;
+}
+
+
 
 .sec08 .listWrap .listCnt {
     display: block;
@@ -520,11 +589,12 @@ a.down:hover {
 
 /* footer */
 .footerWrap {
-    background-color: #000;
+    padding-top: 10.7rem;
 }
 
 footer {
     color: #999999;
+    background-color: #000;
     padding: 5.6rem 0 9.4rem;
 }
 
