@@ -9,6 +9,8 @@ html {
     max-width: 1080px;
 }
 
+
+
 @media (min-width: 650px) and (max-width: 980px){
     html {
         font-size: 92.5%;
@@ -19,6 +21,7 @@ html {
         max-width: none;
     }
 }
+
 
 /* 반응형 */
 .moShow {
@@ -452,11 +455,7 @@ a.down:hover {
 
 /* sec08 */
 
-.scroll-active {
-    overflow-y: scroll;
-    overflow-x: hidden;
-    height: 500px;
-}
+
 
 
 .sec08 .tabTop {
@@ -489,6 +488,7 @@ a.down:hover {
     transition: all 0.5s;
 }
 
+
 .sec08 .tabTop .yearTab li.on {
     background-color: #F2F4F6;
     color: #222;
@@ -499,20 +499,33 @@ a.down:hover {
     overflow: hidden;
 }
 
-.listWrap::-webkit-scrollbar {
+.sec08 .listWrap .scroll-all::-webkit-scrollbar {
     display: none;
 }
 
-.listWrap {
-    -ms-overflow-style: none; /* 인터넷 익스플로러 */
-    scrollbar-width: none; /* 파이어폭스 */
-  }
+.sec08 .listWrap .scroll-all {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
 
 .sec08 .listWrap.on {
     height: 65rem;
-    overflow: scroll;
 }
 
+.sec08 .listWrap .scroll-all {
+    overflow: scroll;
+    height: 100%;
+}
+
+
+/* .sec08 .listWrap .scroll-all.bar::-webkit-scrollbar {
+    display: block;
+}
+
+.sec08 .listWrap .scroll-all.bar {
+    -ms-overflow-style: block;
+    scrollbar-width: block;
+} */
 
 
 .sec08 .listWrap .listCnt {
@@ -583,6 +596,10 @@ a.down:hover {
 .sec08 .listMore:hover {
     background-color: #000;
     color: #fff;
+}
+
+.sec08 .listMore.hide {
+    opacity: 0;
 }
 
 
