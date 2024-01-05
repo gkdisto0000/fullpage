@@ -348,12 +348,12 @@ a.down:hover {
     background-color: #fff;
 }
 
-.sec04 .mockUp-slide, .sec05 .mockUp-slide {
+.sec04 .mockUp-slide, .sec05 .mockUp-slide2 {
     width: 450px;
     overflow: hidden;
 }
 
-.sec04 .mockUp-slide img, .sec05 .mockUp-slide img {
+.sec04 .mockUp-slide img, .sec05 .mockUp-slide2 img {
     width: 100%;
     display: block;
 }
