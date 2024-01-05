@@ -151,7 +151,7 @@ $(function() {
             var innerHeight = $(this).innerHeight();
             var scrollHeight = $(this).prop('scrollHeight');
 
-            if (scrollTop + innerHeight + 1 >= scrollHeight) {
+            if (scrollTop + innerHeight + 0.9 >= scrollHeight) {
                 location.href = "#sec09"
             } else if (scrollTop == 0) {
                 location.href = "#sec07"
@@ -166,7 +166,7 @@ $(function() {
     $('.listMore').click(function(){
         var innerHeight = $('.listWrap.on .scroll-all').innerHeight();
         var scrollHeight = $('.listWrap.on .scroll-all').prop('scrollHeight');
-        var scrollEnd = scrollHeight - innerHeight -1;
+        var scrollEnd = scrollHeight - innerHeight -0.9;
 
         $(".listWrap.on .scroll-all").animate({scrollTop: scrollEnd},700);
     });
