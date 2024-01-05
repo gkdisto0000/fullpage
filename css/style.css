@@ -11,18 +11,6 @@ html {
 
 
 
-@media (min-width: 650px) and (max-width: 980px){
-    html {
-        font-size: 92.5%;
-    }
-    .content {
-        width: 90%;
-        margin: 0 auto;
-        max-width: none;
-    }
-}
-
-
 /* 반응형 */
 .moShow {
     display: none;
@@ -486,6 +474,7 @@ a.down:hover {
     min-width: 8.6rem;
     color: #666;
     transition: all 0.5s;
+    margin: 0 0.2rem;
 }
 
 
@@ -564,6 +553,10 @@ a.down:hover {
 .sec08 .listWrap .listCnt .category {
     font-size: 1.4rem;
     font-weight: bold;
+}
+
+.sec08 .listWrap .listCnt .category span {
+    font-weight: 600;
 }
 
 .sec08 .listWrap .listCnt .category .date{
@@ -687,6 +680,12 @@ footer .ftrRht ul.mid-social li{
     border: 1px solid #999;
     border-radius: 100%;
     background-size: 2rem;
+    opacity: 0.5;
+    transition: opacity 0.5s;
+}
+
+footer .ftrRht ul.mid-social li:hover {
+    opacity: 1;
 }
 
 footer .ftrRht ul.mid-social .twitter {
@@ -756,3 +755,32 @@ footer .ftrRht ul.about li+li:before {
 .topBtn.hide {
     opacity: 0;
 }
+
+
+/* 타블렛 */
+@media (min-width: 980px) and (max-width: 1300px){
+    html {
+        font-size: 42.5%;
+    }
+    .content {
+        width: 90%;
+        margin: 0 auto;
+        max-width: none;
+    }
+    
+    article.flex-in {
+        justify-content: space-around;
+    }
+
+    .sec04 .mockUp-slide, .sec05 .mockUp-slide2 {
+        width: 300px;
+    }
+
+    .sec07 article .art-txt {
+        width: 40%;
+        min-width: 40%;
+    }
+
+}
+
+

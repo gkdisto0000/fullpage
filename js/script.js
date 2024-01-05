@@ -83,7 +83,7 @@ $(function() {
 		easing: 'ease',
 	});
 
-    
+
     // 작가 슬라이드
 	var swiperArticle = new Swiper('.art-slideWrap', {
 		spaceBetween : 40,
@@ -145,41 +145,36 @@ $(function() {
             list.parent('.listWrap').removeClass('scroll-active');
         }
 
+        // 스크롤완료시 페이지 이동
         $(".listWrap.on .scroll-all").scroll(function(){    
             var scrollTop = $(this).scrollTop();
             var innerHeight = $(this).innerHeight();
             var scrollHeight = $(this).prop('scrollHeight');
-            if (scrollTop + innerHeight >= scrollHeight) {
+
+            if (scrollTop + innerHeight + 1 >= scrollHeight) {
                 location.href = "#sec09"
             } else if (scrollTop == 0) {
                 location.href = "#sec07"
             }
-            //console.log(scrollTop);
+            //console.log(scrollTop + innerHeight);
         });
-
-
-
 	});
 	$('.yearTab li:nth-child(1)').trigger('click');
-    
+
 
     //더보기 버튼 클릭시 하단으로 이동
     $('.listMore').click(function(){
         var innerHeight = $('.listWrap.on .scroll-all').innerHeight();
         var scrollHeight = $('.listWrap.on .scroll-all').prop('scrollHeight');
-        var scrollEnd = scrollHeight - innerHeight;
+        var scrollEnd = scrollHeight - innerHeight -1;
 
-        $(".listWrap.on .scroll-all").animate({scrollTop: scrollEnd},800);
+        $(".listWrap.on .scroll-all").animate({scrollTop: scrollEnd},700);
     });
 
     //mo 햄버거 바
     $('.mapBtn').click(function(){
         $(this).toggleClass('active');
     });
-
-
-
-
 
 }) 
 // end
