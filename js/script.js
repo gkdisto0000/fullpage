@@ -17,9 +17,6 @@ $(function() {
 				$('.topBtn').addClass('black');
                 $('.gnbWrap').addClass('black');
 			} else if (index == 4){
-				$('.topBtn').addClass('black');
-                $('.gnbWrap').addClass('black');
-
                 //목업 슬라이드
                 var mockUpSlide = new Swiper('.mockUp-slide', {
                     slidesPerView : 1,
@@ -27,10 +24,12 @@ $(function() {
                     speed : 600,
                     loop : true,
                 });
-            } else if (index == 5){
+
 				$('.topBtn').addClass('black');
                 $('.gnbWrap').addClass('black');
 
+
+            } else if (index == 5){
                 //목업 슬라이드
                 var mockUpSlide = new Swiper('.mockUp-slide2', {
                     slidesPerView : 1,
@@ -38,7 +37,10 @@ $(function() {
                     speed : 600,
                     loop : true,
                 });
-            
+
+				$('.topBtn').addClass('black');
+                $('.gnbWrap').addClass('black');
+
             } else if (index == 6){
 				$('.topBtn').addClass('black');
                 $('.gnbWrap').addClass('black');
