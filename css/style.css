@@ -61,6 +61,7 @@ article .txtcolor {
     margin-bottom: 1rem;
     display: block;
     font-family: 'NanumGothicExtraBold';
+    letter-spacing: -0.5px;
 }
 
 a.down {
@@ -447,7 +448,7 @@ a.down:hover {
 .sec08 .tabTop {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 4rem;
+    margin-bottom: 3rem;
     flex-wrap: wrap;
 }
 
@@ -460,6 +461,7 @@ a.down:hover {
     margin-top: 1.5rem;
     position: relative;
     z-index: 999;
+    pointer-events: auto;
 }
 
 .sec08 .tabTop .yearTab li {
@@ -506,17 +508,6 @@ a.down:hover {
     height: 100%;
 }
 
-
-/* .sec08 .listWrap .scroll-all.bar::-webkit-scrollbar {
-    display: block;
-}
-
-.sec08 .listWrap .scroll-all.bar {
-    -ms-overflow-style: block;
-    scrollbar-width: block;
-} */
-
-
 .sec08 .listWrap .listCnt {
     display: block;
     padding: 4.2rem 1rem;
@@ -556,7 +547,7 @@ a.down:hover {
 }
 
 .sec08 .listWrap .listCnt .category span {
-    font-weight: 600;
+    font-weight: bold;
 }
 
 .sec08 .listWrap .listCnt .category .date{
@@ -568,8 +559,7 @@ a.down:hover {
 
 .sec08 .listWrap .listCnt .listTit {
     font-size: 2.2rem;
-    font-weight: bold;
-    margin-top: 0.8rem;
+    font-weight: 700;
 }
 
 .sec08 .listMore {
@@ -583,7 +573,7 @@ a.down:hover {
     height: 4rem;
     border-radius: 1rem;
     transition: all 0.5s;
-    margin-top: 5rem;
+    margin-top: 3rem;
 }
 
 .sec08 .listMore:hover {
@@ -780,7 +770,6 @@ footer .ftrRht ul.about li+li:before {
         width: 40%;
         min-width: 40%;
     }
-
 }
 
 

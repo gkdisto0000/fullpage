@@ -111,7 +111,7 @@ a.down {
 }
 
 /* 햄버거바 svg */
-.mapBtn  { margin: 0 auto; position: relative; display: block; cursor: pointer;  padding:0;outline:none; position:relative; border:none; background:none; cursor:pointer; -webkit-appearence:none; -webkit-tap-highlight-color:transparent; z-index:999; position: relative; display: block; transition: all 0.3s; --color:#fff; width: 100px; margin: 0 0 0 auto;}
+.mapBtn  {display: block; padding:0;outline:none; border:none; background:none; cursor:pointer; -webkit-appearence:none; -webkit-tap-highlight-color:transparent; z-index:999; position: relative; display: block; transition: all 0.3s; --color:#fff; width: 100px; margin: 0.2rem 0 0 auto;}
 
 .mapBtn svg { stroke:var(--color); stroke-width:1.5px; fill:none; display:block; position:absolute; width:44px; height:36px; position: absolute; right: 0px;}
 
