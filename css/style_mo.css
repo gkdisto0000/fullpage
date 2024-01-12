@@ -1,4 +1,4 @@
-/* 모바일 중간 */
+/* 모바일 중간크기 변경 */
 @media (min-width: 650px) and (max-width: 980px){
     html {
         font-size: 92.5%;
